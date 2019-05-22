@@ -15,7 +15,7 @@ function reduce(arr, callback, starting){
     let r = (!!starting) ? starting : arr[0]
     let i = (!!starting) ? 0 : 1
   
-    for (; i < arr.length; i++) {
+    for (i; i < arr.length; i++) {
       r = callback(arr[i], r)
     }
   
